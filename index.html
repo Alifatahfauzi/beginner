@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My</title>
+
+<meta name="google-site-verification" content="488xiiMIc2qn66q782af9J6c1IC6QNr8XwWD7JLTG28" />
+
+<meta name="description" content="Fauzialifatah beginner.">
+<meta name="keywords" content="Fauzialifatah">
+<meta name="author" content="Fauzialifatah">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://yourdomain.com/">
+
+<meta property="og:title" content="Fauzialifatah">
+<meta property="og:description" content="Salam kenal.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://https://www.shanydev.web.id/">
+<meta property="og:image" content="https://files.catbox.moe/x3lima.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+
+<meta property="profile:first_name" content="Fauzialifatah">
+<meta property="profile:username" content="Fauzialifatah">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fauzialifatah">
+<meta name="twitter:description" content="Selamat datang.">
+<meta name="twitter:image" content="https://https://www.shanydev.web.id/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --text: #121212;
+      --text-light: #3a3a3a;
+      --accent: #1e3c72;
+      --border-subtle: rgba(0,0,0,0.05);
+      --card-bg: rgba(255,255,255,0.8);
+      --grid-color: rgba(180, 190, 200, 0.2);
+      --shadow-sm: 0 8px 20px -6px rgba(0,0,0,0.03), 0 2px 4px -2px rgba(0,0,0,0.02);
+      --radius-sm: 12px;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+      background-size: 50px 50px;
+      font-family: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .navbar {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      backdrop-filter: blur(4px);
+      background-color: rgba(255,255,255,0.6);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo a {
+      font-weight: 550;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.4);
+      padding: 4px 6px;
+    }
+
+    .hero {
+      padding: 60px 0 40px 0;
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      font-weight: 480;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .hero .highlight {
+      background: rgba(30, 60, 114, 0.1);
+      padding: 0 6px;
+      display: inline-block;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      max-width: 650px;
+      margin-bottom: 24px;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 460;
+      letter-spacing: -0.02em;
+      margin-bottom: 30px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0.3;
+      border-radius: 4px;
+    }
+
+    .skills-category {
+      margin-bottom: 36px;
+    }
+
+    .category-head {
+      font-size: 1.3rem;
+      font-weight: 440;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #1e2b3c;
+    }
+
+    .category-head i {
+      color: var(--accent);
+      font-size: 1.5rem;
+      opacity: 0.75;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+    }
+
+    .skill-badge {
+      background: var(--card-bg);
+      backdrop-filter: blur(2px);
+      border-radius: 30px;
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s ease;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: #1f1f1f;
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .skill-badge i.fa-node { color: #6cc24a; }
+    .skill-badge i.fa-js { color: #f7df1e; background: #000; border-radius: 2px; }
+    .skill-badge i.fa-code { color: #007acc; }
+    .skill-badge i.fa-bolt { color: #3ecf8e; }
+    .skill-badge i.fa-fire { color: #ffca28; }
+    .skill-badge i.fa-cloud-sun { color: #f38020; }
+
+    .skill-badge:hover {
+      transform: translateY(-3px);
+      background: white;
+      border-color: rgba(30,60,114,0.15);
+    }
+
+    .main-footer {
+      padding: 32px 0 24px;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4a5568;
+      font-size: 0.95rem;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #718096;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo"><a href="#">My</a></div>
+    </nav>
+
+    <section id="hero" class="hero">
+      <h1>
+        <span class="highlight">Hii Fauzialifatah</span>
+      </h1>
+      <h2>Selamat datang developer</h2>
+      <p>Bangunlah, aturlah karyamu dengan sesuka hatimu, dan jadikan setiap langkah sebagai bagian dari perjalananmu menuju kesuksesan.</p>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">skills & tools</h2>
+
+      <div class="skills-category">
+        <div class="category-head"><i class="fas fa-server"></i> <span>Backend</span></div>
+        <div class="badge-grid">
+          <div class="skill-badge"><i class="fab fa-node"></i> Node.js</div>
+          <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
+          <div class="skill-badge"><i class="fas fa-code"></i> TypeScript</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <div class="category-head"><i class="fas fa-database"></i> <span>BaaS</span></div>
+        <div class="badge-grid">
+          <div class="skill-badge"><i class="fas fa-bolt"></i> Supabase</div>
+          <div class="skill-badge"><i class="fas fa-fire"></i> Firebase</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <div class="category-head"><i class="fas fa-cloud"></i> <span>Support</span></div>
+        <div class="badge-grid">
+          <div class="skill-badge"><i class="fas fa-cloud-sun"></i> Cloudflare</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="copyright">
+          <i class="far fa-copyright"></i> admin: 082199509537
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    console.log("Bersyukur");
+  </script>
+</body>
+</html>
